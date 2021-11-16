@@ -46,8 +46,8 @@ window.outerHeight /* 900 */
 There are several DOM properties that can help you query viewport size, and other similar lengths:
 
 - The document element's {{DOMxRef("Element.clientWidth")}} is the inner width of a document in [CSS pixels](/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#A_pixel_is_not_a_pixel), including padding (but not borders, margins, or vertical scrollbars, if present). **This is the viewport width**.
-- The {{DOMxRef("Window.innerWidth")}} is the width, in CSS pixels, of the browser window viewport including, if rendered, the vertical scrollbar.
-- The {{DOMxRef("Window.outerWidth")}} is the width of the outside of the browser window including all the window {{glossary("chrome")}}.
+- The {{DOMxRef("window.innerWidth")}} is the width, in CSS pixels, of the browser window viewport including, if rendered, the vertical scrollbar.
+- The {{DOMxRef("window.outerWidth")}} is the width of the outside of the browser window including all the window {{glossary("chrome")}}.
 
 In an experiment with these, the `innerWidth` and `outerWidth` was seen to be the same, but the `outerHeight` was 100px taller than the `innerHeight`. This is because the `outerHeight` includes the browser chrome: measurements were taken on a browser with an address bar and bookmarks bar totalling 100px in height, but no chrome on the left or right of the window.
 
